@@ -34,7 +34,7 @@
 }
 
 .header {
-  background-color: #B9E3E9;
+  background-color: white;
   position: fixed;
   top: 0em;
   left: 0em;
@@ -43,9 +43,10 @@
   margin-left: auto;
   margin-right: auto;
   height: 5em;
-  -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+  /* -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75); */
+  /* border-bottom: solid 1px rgb(206, 212, 218); */
 }
 
 .headerContent {
@@ -56,15 +57,22 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #B9E3E9;
+  background-color: white;
   height: 5em;
+  /* border-bottom: solid 1px rgb(206, 212, 218); */
 }
 
 .logo {
-  margin-top: 10px;
+  margin-right: .2em;
+  margin-bottom: .1em;
 }
 
-.nav {
+.navLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navRight {
   display: flex;
   font-size: 1.5em;
   align-items: center;
@@ -85,9 +93,10 @@
 .welcomeContent {
   font-family: 'robotolight';
   margin-top: 5em;
-  background-color: #e7f5f7;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(231,245,247,1) 100%);
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
@@ -95,7 +104,6 @@
 
 .mainContent {
   font-family: 'robotolight';
-  margin-top: 5em;
   background-color: #e7f5f7;
   width: 100%;
   height: auto;
@@ -126,9 +134,9 @@
 
 .footer {
   display: flex;
-  -webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+  /* -webkit-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75); */
   font-size: 1.2em;
   font-family: 'robotolight';
   background-color: #B9E3E9;
@@ -142,17 +150,46 @@
   align-items: center;
 }
 
+.myName {
+  position: absolute;
+  font-family: 'robotomedium';
+  font-size: 6em;
+  text-align: left;
+  margin-bottom: 2.4em;
+  bottom: 0;
+}
+
+.myTitle {
+  position: absolute;
+  font-family: 'robotoregular';
+  font-size: 3em;
+  text-align: left;
+  margin-bottom: 2em;
+  bottom: 0;
+}
+
 .aboutHeader {
 text-align: center;
+margin-top: 32px;
 }
 
 .portfolioHeader {
   text-align: center;
+  margin-top: 32px;
 }
 
 .contactHeader {
   text-align: center;
-  margin-top: 8px;
+  margin-top: 16px;
+}
+
+.welcome {
+  margin-top: 5em;
+  width: 975px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
 }
 
 .aboutContent {
@@ -160,6 +197,7 @@ text-align: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2em;
 }
 
 .portfolioContent {
@@ -167,6 +205,7 @@ text-align: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2em;
 }
 
 .contactContent {
@@ -174,9 +213,20 @@ text-align: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1em;
+  margin-bottom: 24px;
 }
 
 #message.form-control {
-  height: 114px;
+  height: 192px;
+  margin-bottom: 32px;
+}
+
+
+
+.connectLogo1 {
+  margin-left: .5em;
+}
+
+.connectLogo2 {
+  margin-left: 1em;
 }
