@@ -25,17 +25,17 @@ function App() {
           </div>
           <div className="navRight">
           <div className="about">
-            <a href="#mainContent">
+            <a href="#about">
             <Button outline color="info">About</Button>
             </a>
           </div>
           <div className="portfolio">
-          <a href="#secContent">
+          <a href="#portfolio">
           <Button outline color="info">Portfolio</Button>
           </a>
           </div>
           <div className="contact">
-          <a href="#tertContent">
+          <a href="#contact">
           <Button outline color="info">Contact</Button>
           </a>
           </div>
@@ -49,19 +49,19 @@ function App() {
           </br>Lancaster, Pennsylvania</h2>
         </div>
       </div>
-      <div id="mainContent">
+      <div id="about">
       <h2 className="aboutHeader">About</h2>
       <div className="aboutContent">
       I have experience in software engineering and creating clean functionable websites. I work with technologies such as ReactJS, ExpressJS, and several others. I'm constantly learning and always ready for the next challenge that comes in the way.
       </div>
       </div>
-      <div id="secContent">
+      <div id="portfolio">
       <h2 className="portfolioHeader">Portfolio</h2>
       <div className="portfolioContent">
       <Portfolio />
       </div>
       </div>
-      <div id="tertContent">
+      <div id="contact">
       <h2 className='contactHeader'>Contact</h2>
       <div className="contactContent">
       <Form className='contactForm' method="POST" action='send'>
@@ -83,7 +83,8 @@ function App() {
       </div>
       <div className="footer">
       <div className="footerContent">
-      © 2020 Kyle Sweigart
+      <div>© 2020 Kyle Sweigart<br></br></div>
+      <div style={{fontSize: "2px"}}>You found me!</div>
       </div>
       </div>
     </div>

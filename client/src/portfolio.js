@@ -14,21 +14,25 @@ import tictactoe from "./images/tictactoeApp.png";
 const items = [
   {
     src: `${weather}`,
+    header: 'Weather Search',
     altText: 'Weather Search',
     caption: "Input any city arould the world and return the current weather. Created using OpenWeatherMap's Weather API."
   },
   {
     src: `${calc}`,
+    header: 'Calculator',
     altText: 'Calculator',
     caption: 'A simple fully functioning calculator application.'
   },
   {
     src: `${etch}`,
+    header: 'Etch-A-Sketch',
     altText: 'Etch-A-Sketch',
     caption: 'Choose the board size and draw a picture with your cursor.'
   },
   {
     src: `${tictactoe}`,
+    header: 'Tic-Tac-Toe',
     altText: 'Tic-Tac-Toe',
     caption: 'The all-time classic game of Tic-Tac-Toe.'
   }
@@ -63,7 +67,7 @@ const Portfolio = (props) => {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+        <CarouselCaption captionText={item.caption} captionHeader={item.header} />
       </CarouselItem>
     );
   });
