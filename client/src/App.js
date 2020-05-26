@@ -1,10 +1,11 @@
 import React from 'react';
 import Portfolio from './portfolio';
 import './css/App.css';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import logo from "./images/logo.png";
 import githubLogo from "./images/githublogo.png";
 import linkedInLogo from "./images/linkedinlogo.png";
+import ContactForm from './ContactForm';
+
 
 
 function App() {
@@ -64,21 +65,7 @@ function App() {
       <div id="contact">
       <h2 className='contactHeader'>Contact</h2>
       <div className="contactContent">
-      <Form className='contactForm' method="POST" action='send'>
-      <FormGroup>
-        <Label for="Name"></Label>
-        <Input type="name" name="name" id="name" placeholder="Name" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="Email"></Label>
-        <Input type="email" name="email" id="email" placeholder="Email" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="Message"></Label>
-        <Input type="textarea" name="message" id="message" placeholder="Message"/>
-      </FormGroup>
-      <Button>Submit</Button>
-    </Form>
+        <ContactForm />
       </div>
       </div>
       <div className="footer">
