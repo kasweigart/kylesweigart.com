@@ -1,17 +1,17 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var nodemailerMailgun = require('nodemailer-mailgun-transport');
 const creds = require('../config');
 
 var transport = {
-  host: 'smtp.gmail.com',
   auth: {
-    user: creds.USER,
-    pass: creds.PASS
+    apikey: creds.APIKEY,
+    domain: creds.DOMAIN
   }
 }
 
-var transporter = nodemailer.createTransport(transport)
+var transporter = nodemailer.createTransport(nodemailerMailgun(transport))
 
 transporter.verify((error, success) => {
   if (error) {
@@ -25,7 +25,7 @@ router.post('/send', (req, res, next) => {
   var name = req.body.name
   var email = req.body.email
   var message = req.body.message
-  var content = `name: ${name} \n email: ${email} \n message: ${content} `
+  var content = `name: ${name} \n email: ${email} \n message: ${message} `
 
   var mail = {
     from: name,
