@@ -1,4 +1,5 @@
 import React from 'react';
+import Portfolio from './portfolio';
 import './css/App.css';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import logo from "./images/logo.png";
@@ -24,13 +25,19 @@ function App() {
           </div>
           <div className="navRight">
           <div className="about">
+            <a href="#mainContent">
             <Button outline color="info">About</Button>
+            </a>
           </div>
           <div className="portfolio">
+          <a href="#secContent">
           <Button outline color="info">Portfolio</Button>
+          </a>
           </div>
           <div className="contact">
+          <a href="#tertContent">
           <Button outline color="info">Contact</Button>
+          </a>
           </div>
           </div>
         </div>
@@ -42,22 +49,22 @@ function App() {
           </br>Lancaster, Pennsylvania</h2>
         </div>
       </div>
-      <div className="mainContent">
+      <div id="mainContent">
       <h2 className="aboutHeader">About</h2>
       <div className="aboutContent">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      I have experience in software engineering and creating clean functionable websites. I work with technologies such as ReactJS, ExpressJS, and several others. I'm constantly learning and always ready for the next challenge that comes in the way.
       </div>
       </div>
-      <div className="secContent">
+      <div id="secContent">
       <h2 className="portfolioHeader">Portfolio</h2>
       <div className="portfolioContent">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <Portfolio />
       </div>
       </div>
-      <div className="tertContent">
+      <div id="tertContent">
       <h2 className='contactHeader'>Contact</h2>
       <div className="contactContent">
-      <Form className='contactForm'>
+      <Form className='contactForm' method="POST" action='send'>
       <FormGroup>
         <Label for="Name"></Label>
         <Input type="name" name="name" id="name" placeholder="Name" />
