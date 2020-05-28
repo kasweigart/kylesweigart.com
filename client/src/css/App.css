@@ -243,23 +243,11 @@ font-size: 2.5em;
   margin-left: 1em;
 }
 
-.icon {
-  display: none;
+#icon {
+  display: inline-block;
 }
 
-@media screen and (max-width: 600px) {
-  .portfolio {
-    display: none;
-  }
-  .about {
-    display: none;
-  }
-  .contact {
-    display: none;
-  }
-  .icon {
-    display: flex;
-  }
+@media (max-width: 599px) {
   .myName {
     font-size: 4em;
     padding-top: 6em;
@@ -267,6 +255,22 @@ font-size: 2.5em;
   .myTitle {
     font-size: 2em;
   }
+  .about {
+    display: none;
+  }
+  .portfolio {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  #icon {
+    display: none;
+  }
+
 }
 
 @media (min-width: 1200px) {

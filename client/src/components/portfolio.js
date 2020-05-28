@@ -66,7 +66,7 @@ const Portfolio = (props) => {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        <img src={item.src} alt={item.altText} />
+        <img src={item.src} alt={item.altText} width="100%"/>
         <CarouselCaption captionText={item.caption} captionHeader={item.header} />
       </CarouselItem>
     );

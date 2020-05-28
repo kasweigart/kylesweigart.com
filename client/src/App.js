@@ -20,7 +20,7 @@ function App() {
           <img src={logo} alt="Logo" width='60px' height='60px' className='logo' />
           </a>
           <a href="https://github.com/kasweigart">
-            <img src={githubLogo} className='connectLogo1' alt="GithubLogo"/>
+            <img src={githubLogo} className='connectLogo1' alt="GithubLogo" width='32px' height='32px'/>
           </a>
           <a href="https://www.linkedin.com/in/kylesweigart/">
           <img src={linkedInLogo} className='connectLogo2' alt="LinkedInLogo" width='32px' height='32px' />
@@ -41,10 +41,11 @@ function App() {
           <a href="#contact">
           <Button outline color="info">Contact</Button>
           </a>
-          <a href="#dropdown" className="icon">
+          
+          </div>
+          <a href="#dropdown" id="icon">
             <Dropdown />
           </a>
-          </div>
           </div>
         </div>
       </header>
