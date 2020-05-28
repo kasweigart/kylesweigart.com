@@ -44,11 +44,9 @@ function App() {
         </div>
       </header>
       <div className="welcomeContent">
-        <div className="welcome">
           <h1 className="myName">Kyle<br></br>Sweigart</h1>
           <h2 className="myTitle">Software Engineer<br>
           </br>Lancaster, Pennsylvania</h2>
-        </div>
       </div>
       <div id="about">
       <h2 className="aboutHeader">About</h2>
