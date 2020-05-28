@@ -6,7 +6,7 @@ const creds = require('../config');
 
 var transport = {
   auth: {
-    apikey: creds.APIKEY,
+    api_key: creds.APIKEY,
     domain: creds.DOMAIN
   }
 }
