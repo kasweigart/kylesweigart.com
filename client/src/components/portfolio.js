@@ -10,6 +10,7 @@ import weather from "../images/weatherApp.png";
 import calc from "../images/calculatorApp.png";
 import etch from "../images/etchasketchApp.png";
 import tictactoe from "../images/tictactoeApp.png";
+import website from "../images/website.png";
 
 const items = [
   {
@@ -35,6 +36,12 @@ const items = [
     header: 'Tic-Tac-Toe',
     altText: 'Tic-Tac-Toe',
     caption: 'The all-time classic game of Tic-Tac-Toe.'
+  },
+  {
+    src: `${website}`,
+    header: 'My Personal Website',
+    altText: 'My Personal Website',
+    caption: 'A simple and clean webpage built from scratch.'
   }
 ];
 

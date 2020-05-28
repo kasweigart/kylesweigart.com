@@ -76,7 +76,7 @@ h3 {
 
 .logo {
   margin-right: .2em;
-  margin-bottom: .1em;
+  margin-bottom: .05em;
 }
 
 .navLeft {
@@ -208,7 +208,7 @@ font-size: 2.5em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 112px;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .portfolioContent {
@@ -250,7 +250,7 @@ font-size: 2.5em;
 @media (max-width: 599px) {
   .myName {
     font-size: 4em;
-    padding-top: 6em;
+    padding-top: 5em;
   }
   .myTitle {
     font-size: 2em;

@@ -12,9 +12,15 @@ const MobileDropdown = (props) => {
       ≡
       </DropdownToggle>
       <DropdownMenu>
+        <a href="#about" style={{textDecoration: 'none'}}>
         <DropdownItem>About</DropdownItem>
+        </a>
+        <a href="#portfolio" style={{textDecoration: 'none'}}>
         <DropdownItem>Portfolio</DropdownItem>
+        </a>
+        <a href="#contact" style={{textDecoration: 'none'}}>
         <DropdownItem>Contact</DropdownItem>
+        </a>
       </DropdownMenu>
     </ButtonDropdown>
   );
