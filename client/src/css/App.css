@@ -26,7 +26,6 @@
 }
 
 html {
-  display: block;
   scroll-behavior: smooth;
 }
 p {
@@ -65,7 +64,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   font-family: 'robotomedium';
-  width: 975px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -73,6 +71,7 @@ h3 {
   height: 5em;
   border-bottom: solid 1px rgb(206, 212, 218);
   z-index: 999;
+  padding: 1em;
 }
 
 .logo {
@@ -105,14 +104,10 @@ h3 {
 
 .welcomeContent {
   font-family: 'robotolight';
-  margin-top: 5em;
   background: rgb(255,255,255);
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(208,236,240,1) 100%);
   width: 100%;
   height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
 }
 
 #about {
@@ -165,16 +160,24 @@ h3 {
 }
 
 .myName {
-  margin-top: 2.5em;
+  padding-top: 3.5em;
   font-family: 'robotoregular';
   font-size: 6em;
   text-align: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
 }
 
 .myTitle {
   font-family: 'robotolight';
   font-size: 3em;
   text-align: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
 }
 
 .aboutHeader {
@@ -197,21 +200,10 @@ font-size: 2.5em;
   margin-top: 96px;
   margin-bottom: 6px;
   font-size: 2.5em;
-
-}
-
-.welcome {
-  margin-top: 5em;
-  width: 975px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2em;
+  width: 100%;
 }
 
 .aboutContent {
-  display: flex;
-  width: 975px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -220,7 +212,6 @@ font-size: 2.5em;
 }
 
 .portfolioContent {
-  width: 975px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -230,7 +221,6 @@ font-size: 2.5em;
 }
 
 .contactContent {
-  width: 975px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -258,3 +248,28 @@ font-size: 2.5em;
 .carousel-control-prev-icon {
   background-color: black;
 }
+
+@media (min-width: 1200px) {
+  .headerContent {
+    width: 1170px;
+  }
+  .aboutContent {
+    width: 1170px;
+  }
+  .portfolioContent {
+    width: 1170px;
+  }
+  .contactContent {
+    width: 1170px;
+  }
+  .welcome {
+    width: 1170px;
+  }
+  .myName {
+    width: 1170px;
+  }
+  .myTitle {
+    width: 1170px;
+  }
+}
+

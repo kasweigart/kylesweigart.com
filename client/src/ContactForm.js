@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import axios from 'axios';
+import Axios from 'axios';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class ContactForm extends Component{
@@ -9,12 +9,12 @@ class ContactForm extends Component{
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
-        axios({
+        Axios({
             method: "POST", 
-            url:"http://localhost:3000/send", 
+            url:"http://localhost:3001/", 
             data: {
-                name: name,   
-                email: email,  
+                name: name,  
+                email: email, 
                 message: message
             }
         }).then((response)=>{
@@ -25,6 +25,7 @@ class ContactForm extends Component{
                 alert("Message failed to send.")
             }
         })
+        console.log(name);
     }
 
     resetForm(){
@@ -46,7 +47,7 @@ class ContactForm extends Component{
         <Label for="message"></Label>
         <Input type="textarea" name="message" id="message" placeholder="Message"/>
       </FormGroup>
-      <Button>Submit</Button>
+      <Button type="Submit">Submit</Button>
     </Form>
         )
     }
