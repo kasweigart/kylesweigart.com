@@ -1,14 +1,16 @@
 import React from 'react';
-import Portfolio from './portfolio';
+import Portfolio from './components/portfolio';
 import './css/App.css';
 import logo from "./images/logo.png";
 import githubLogo from "./images/githublogo.png";
 import linkedInLogo from "./images/linkedinlogo.png";
-import ContactForm from './ContactForm';
+import ContactForm from './components/ContactForm';
 import { Button } from 'reactstrap';
+import Dropdown from './components/MobileDropdown';
 
 
 function App() {
+
   return (
     <div className="main">
       <header className="header">
@@ -38,6 +40,9 @@ function App() {
           <div className="contact">
           <a href="#contact">
           <Button outline color="info">Contact</Button>
+          </a>
+          <a href="#dropdown" className="icon">
+            <Dropdown />
           </a>
           </div>
           </div>

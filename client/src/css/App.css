@@ -235,8 +235,6 @@ font-size: 2.5em;
   margin-bottom: 32px;
 }
 
-
-
 .connectLogo1 {
   margin-left: .3em;
 }
@@ -245,8 +243,30 @@ font-size: 2.5em;
   margin-left: 1em;
 }
 
-.carousel-control-prev-icon {
-  background-color: black;
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    display: none;
+  }
+  .about {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .icon {
+    display: flex;
+  }
+  .myName {
+    font-size: 4em;
+    padding-top: 6em;
+  }
+  .myTitle {
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -272,4 +292,28 @@ font-size: 2.5em;
     width: 1170px;
   }
 }
+/* 
+@media (min-width: 768px) {
+  .headerContent {
+    width: 750px;
+  }
+  .aboutContent {
+    width: 750px;
+  }
+  .portfolioContent {
+    width: 750px;
+  }
+  .contactContent {
+    width: 750px;
+  }
+  .welcome {
+    width: 750px;
+  }
+  .myName {
+    width: 750px;
+  }
+  .myTitle {
+    width: 750px;
+  }
+} */
 

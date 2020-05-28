@@ -6,10 +6,10 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import weather from "./images/weatherApp.png";
-import calc from "./images/calculatorApp.png";
-import etch from "./images/etchasketchApp.png";
-import tictactoe from "./images/tictactoeApp.png";
+import weather from "../images/weatherApp.png";
+import calc from "../images/calculatorApp.png";
+import etch from "../images/etchasketchApp.png";
+import tictactoe from "../images/tictactoeApp.png";
 
 const items = [
   {
