@@ -57,7 +57,7 @@ function App() {
       <div id="about">
       <h2 className="aboutHeader">About</h2>
       <div className="aboutContent">
-      I have experience in software engineering and creating clean functionable web applications and websites. I work with technologies such as Bootstrap, JavaScript, Node/NPM, and several others. Staying on top of today's ever changing trends in technology is very important to me as we all make progress in the industry.<br></br><br></br>Check out some of my work below.
+      I have experience in software engineering and creating clean functionable web applications and websites. I work with technologies such as Bootstrap, JavaScript, Linux Terminal, Git, Node/NPM, and several others. Staying on top of today's ever changing trends in technology is very important to me as we all progress in the industry.<br></br><br></br>Check out some of my work below.
       </div>
       </div>
       <div id="portfolio">

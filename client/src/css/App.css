@@ -35,8 +35,9 @@ p {
 }
 
 h3 {
-  color: black;
+  color: blue;
   font-family: 'robotoregular';
+  text-decoration: underline;
 }
 
 .main {
@@ -246,6 +247,17 @@ font-size: 2.5em;
 #icon {
   display: inline-block;
 }
+
+.carousel-caption {
+  position: relative !important;
+  left: 0 !important;
+  padding-top: 30px !important;
+}
+
+.d-none {
+    display: block !important;
+}
+
 
 @media (max-width: 599px) {
   .myName {
