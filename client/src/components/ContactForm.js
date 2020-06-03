@@ -19,27 +19,22 @@ const ContactForm = (props) => {
         const modalBody = document.getElementById('modalBody');
         const modalHeader = document.getElementById('modalHeader');
 
-        if (name !== '' || email !== '' || message !== '') {
+         
           axios.post('/api/contact', {
             from: `${name} ${email}`,
             message
           })
           .then(() => {
+            if (name !== '' && email !== '' && message !== '') {
             modalBody.innerText = 'Your message has been sent.';
             modalHeader.innerText = 'Thank you';
             document.getElementById('contactForm').reset();
+            }
           })
           .catch(() => {
             modalBody.innerText = 'Please resubmit your completed form or try again later.';
             modalHeader.innerText = 'Oops, something went wrong!';
-          });
-          
-        } else {
-          modalBody.innerText = 'Please resubmit your completed form or try again later.';
-          modalHeader.innerText = 'Oops, something went wrong!';
-        }
-
-        
+          });    
     }
 
     
