@@ -161,7 +161,7 @@ h3 {
 }
 
 .myName {
-  padding-top: 3.5em;
+  padding-top: 40vh;
   font-family: 'robotoregular';
   font-size: 6em;
   text-align: left;
@@ -259,10 +259,11 @@ font-size: 2.5em;
 }
 
 
+
 @media (max-width: 599px) {
   .myName {
     font-size: 4em;
-    padding-top: 5em;
+    padding-top: 40vh;
   }
   .myTitle {
     font-size: 2em;
@@ -276,13 +277,20 @@ font-size: 2.5em;
   .contact {
     display: none;
   }
+
+  .carousel-control-prev-icon {
+    display: none !important;
+  }
+  .carousel-control-next-icon {
+    display: none !important;
+  }
 }
 
 @media (min-width: 600px) {
   #icon {
     display: none;
   }
-
+  
 }
 
 @media (min-width: 1200px) {

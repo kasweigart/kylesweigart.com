@@ -49,7 +49,7 @@ const items = [
     header: 'To-Do List',
     altText: 'To-Do List',
     caption: 'Add and delete tasks and stay on top of your agenda.',
-    href: ''
+    href: 'https://kasweigart.github.io/todo-list-static/'
   },
   {
     src: `${tictactoe}`,
