@@ -27,7 +27,7 @@ const ContactForm = (props) => {
           .then(() => {
             if (name !== '' && email !== '' && message !== '') {
             modalBody.innerText = 'Your message has been sent.';
-            modalHeader.innerText = 'Thank you';
+            modalHeader.innerText = 'Thank you!';
             document.getElementById('contactForm').reset();
             }
           })
