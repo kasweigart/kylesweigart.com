@@ -24,17 +24,19 @@ const ContactForm = (props) => {
             from: `${name} ${email}`,
             message
           })
-          .then((res) => {
-            console.log(res);
+          .then(() => {
+            modalBody.innerText = 'Your message has been sent.';
+            modalHeader.innerText = 'Thank you';
+            document.getElementById('contactForm').reset();
           })
-          .catch((err) => {
-            console.log(err);
+          .catch(() => {
+            modalBody.innerText = 'Please resubmit your completed form or try again later.';
+            modalHeader.innerText = 'Oops, something went wrong!';
           });
-          modal.innerText = 'Test';
-          document.getElementById('contactForm').reset();
+          
         } else {
-          modalBody.innerText = 'Please fill in all fields before submitting.';
-          modalHeader.innerText = 'Oops, a mistake was made!';
+          modalBody.innerText = 'Please resubmit your completed form or try again later.';
+          modalHeader.innerText = 'Oops, something went wrong!';
         }
 
         
