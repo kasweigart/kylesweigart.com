@@ -55,8 +55,8 @@ const ContactForm = (props) => {
       </FormGroup>
       <Button type="Submit" onClick={toggle}>Submit</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle} id='modalHeader' style={{fontSize: '1.5em'}}></ModalHeader>
-        <ModalBody id='modalBody'>
+        <ModalHeader toggle={toggle} id='modalHeader' style={{fontSize: '1.5em'}}>Oops, something went wrong!</ModalHeader>
+        <ModalBody id='modalBody'>Please resubmit your completed form or try again later.
         </ModalBody>
         <ModalFooter>
           <Button color="info" onClick={toggle}>Ok</Button>
