@@ -7,7 +7,7 @@ const apiRouter = require('./routes');
 app.use(express.json());
 app.use(apiRouter);
 
-app.use(express.static(path.join(__dirname, 'client/public')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.listen(port, "127.0.0.1");
 console.log(`Listening on port ${port}...`);
