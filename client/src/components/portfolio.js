@@ -6,70 +6,38 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import weather from "../images/weatherApp.png";
-import calc from "../images/calculatorApp.png";
-import etch from "../images/etchasketchApp.png";
-import tictactoe from "../images/tictactoeApp.png";
 import website from "../images/website.png";
-import battleship from "../images/battleship.png";
-import library from '../images/library.png';
-import todolist from '../images/todolist.png';
+import marketExamine from "../images/marketExamine.png";
+import algoArea from "../images/algoArea.png";
+import spaceFollow from "../images/spaceFollow.png";
 
 const items = [
   {
-    src: `${library}`,
-    header: 'My Library',
-    altText: 'My Library',
-    caption: "Keep your books organized with this easy-to-use web library.",
-    href: 'https://kasweigart.github.io/Library/'
+    src: `${marketExamine}`,
+    header: 'MarketExamine',
+    altText: 'MarketExamine',
+    caption: 'A stock-market analysis platform for organizing real-time stock data.',
+    href: 'https://marketexamine.com/'
   },
   {
-    src: `${weather}`,
-    header: 'Weather Search',
-    altText: 'Weather Search',
-    caption: "Input any city arould the world and return the current weather. Created using OpenWeatherMap's Weather API.",
-    href: 'https://kasweigart.github.io/Weather-App/'
+    src: `${algoArea}`,
+    header: 'AlgoArea',
+    altText: 'AlgoArea',
+    caption: 'A collection of computer science concepts to help users practice and think like a programmer.',
+    href: 'https://algoarea.com/'
   },
   {
-    src: `${calc}`,
-    header: 'Calculator',
-    altText: 'Calculator',
-    caption: 'A simple fully functioning calculator application.',
-    href: 'https://kasweigart.github.io/Calculator/'
-  },
-  {
-    src: `${etch}`,
-    header: 'Etch-A-Sketch',
-    altText: 'Etch-A-Sketch',
-    caption: 'Choose the board size and draw a picture with your cursor.',
-    href: 'https://kasweigart.github.io/Etch-A-Sketch/'
-  },
-  {
-    src: `${todolist}`,
-    header: 'To-Do List',
-    altText: 'To-Do List',
-    caption: 'Add and delete tasks and stay on top of your agenda.',
-    href: 'https://kasweigart.github.io/todo-list-static/'
-  },
-  {
-    src: `${tictactoe}`,
-    header: 'Tic-Tac-Toe',
-    altText: 'Tic-Tac-Toe',
-    caption: 'The all-time classic game of Tic-Tac-Toe.',
-    href: 'https://kasweigart.github.io/Tic-Tac-Toe/'
-  },
-  {
-    src: `${battleship}`,
-    header: 'Battleship',
-    altText: 'Battleship',
-    caption: `My first project in JavaScript from the book "Head First JavaScript."`,
-    href: 'https://kasweigart.github.io/Battleship/'
+    src: `${spaceFollow}`,
+    header: 'SpaceFollow',
+    altText: 'SpaceFollow',
+    caption: 'A site crafted specifically for astronomy and space-exploration enthusiasts.',
+    href: 'https://spacefollow.com/'
   },
   {
     src: `${website}`,
     header: 'My Personal Website',
     altText: 'My Personal Website',
-    caption: 'A clean and elegant webpage built from scratch using ReactJS and ExpressJS.',
+    caption: 'A simple one page website showcasing the work I have completed.',
     href: 'https://kylesweigart.com/'
   }
 ];
